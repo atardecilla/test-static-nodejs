@@ -38,7 +38,7 @@ app.get('/api/ping', (request, response) => {
 app.get('/2plus2', (request, response) => {
 	console.log('Calling "/2plus2" on the Node.js server.')
 	response.type('text/plain')
-	response.send('4')
+	response.send('4') //sends back the text representation of 4
 })
 
 // Add x and y which are both passed in on the URL. 
@@ -158,3 +158,4 @@ app.listen(port, () => console.log(
   `Express started at \"http://localhost:${port}\"\n` +
   `press Ctrl-C to terminate.`)
 )
+
